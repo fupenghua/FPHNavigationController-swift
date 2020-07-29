@@ -1,6 +1,0 @@
-framework module FPHNavigationController_swift {
-  umbrella header "FPHNavigationController-swift-umbrella.h"
-
-  export *
-  module * { export * }
-}
