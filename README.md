@@ -1,5 +1,4 @@
 # FPHNavigationController-swift
-<<<<<<< HEAD
 
 [![CI Status](https://img.shields.io/travis/fupenghua/FPHNavigationController-swift.svg?style=flat)](https://travis-ci.org/fupenghua/FPHNavigationController-swift)
 [![Version](https://img.shields.io/cocoapods/v/FPHNavigationController-swift.svg?style=flat)](https://cocoapods.org/pods/FPHNavigationController-swift)
@@ -33,7 +32,8 @@ swift版本自定义导航+fix left item space
 隐藏系统navigationBar，然后在每个controller添加一个navigationBar，内部适配了左按钮的左边距
 
 在AppDelegate中添加
-```private static let runOnce: Void = {
+```
+private static let runOnce: Void = {
       ClassLoad.harmlessFunction()
   }()
   
@@ -42,4 +42,3 @@ swift版本自定义导航+fix left item space
       return super.next
   }
   ```
->>>>>>> 0229746f7e0c1de0f11fd8b79fb30228294da018
