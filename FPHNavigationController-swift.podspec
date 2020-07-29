@@ -19,17 +19,6 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
   隐藏系统navigationBar，然后在每个controller添加一个navigationBar，内部适配了左按钮的左边距
-  在AppDelegate中添加
-
-  `private static let runOnce: Void = {
-        ClassLoad.harmlessFunction()
-    }()
-    
-    override open var next: UIResponder? {
-        AppDelegate.runOnce
-        return super.next
-    }`
-
                        DESC
 
   s.homepage         = 'https://github.com/fupenghua/FPHNavigationController-swift'
