@@ -1,4 +1,5 @@
 # FPHNavigationController-swift
+<<<<<<< HEAD
 
 [![CI Status](https://img.shields.io/travis/fupenghua/FPHNavigationController-swift.svg?style=flat)](https://travis-ci.org/fupenghua/FPHNavigationController-swift)
 [![Version](https://img.shields.io/cocoapods/v/FPHNavigationController-swift.svg?style=flat)](https://cocoapods.org/pods/FPHNavigationController-swift)
@@ -27,3 +28,6 @@ fupenghua, 390908980@qq.com
 ## License
 
 FPHNavigationController-swift is available under the MIT license. See the LICENSE file for more info.
+=======
+swift版本自定义导航+fix left item space
+>>>>>>> 0229746f7e0c1de0f11fd8b79fb30228294da018
