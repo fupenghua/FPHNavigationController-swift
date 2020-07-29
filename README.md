@@ -28,9 +28,11 @@ fupenghua, 390908980@qq.com
 
 FPHNavigationController-swift is available under the MIT license. See the LICENSE file for more info.
 =======
-swift版本自定义导航+fix left item space
-隐藏系统navigationBar，然后在每个controller添加一个navigationBar，内部适配了左按钮的左边距
+swift版本自定义导航+fix left item space，隐藏系统navigationBar，然后在每个controller添加一个navigationBar，内部适配了左按钮的左边距
+
+###使用
 创建导航控制器时候使用FPHNavigationViewController创建，也可以继承该类
+
 在AppDelegate中添加
 ```
 private static let runOnce: Void = {
