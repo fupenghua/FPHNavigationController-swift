@@ -24,5 +24,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         return true
     }
+    
+    private static let runOnce: Void = {
+        ClassLoad.harmlessFunction()
+    }()
+    
+    override open var next: UIResponder? {
+        AppDelegate.runOnce
+        return super.next
+    }
 
 }

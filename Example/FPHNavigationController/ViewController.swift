@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         self.title = "navigation"
         addButton()
         addBack()
+        self.view.bringSubviewToFront(self.view)
         // Do any additional setup after loading the view.
     }
     
