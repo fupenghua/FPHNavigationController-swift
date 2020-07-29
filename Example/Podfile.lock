@@ -1,0 +1,16 @@
+PODS:
+  - FPHNavigationController-swift (0.1.0)
+
+DEPENDENCIES:
+  - FPHNavigationController-swift (from `../`)
+
+EXTERNAL SOURCES:
+  FPHNavigationController-swift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FPHNavigationController-swift: e378a44d2ae92168bbcc0d00c8d7126aa4490374
+
+PODFILE CHECKSUM: 7cb75345a263ed8a147da59ef3438e33ad1eac41
+
+COCOAPODS: 1.9.1
