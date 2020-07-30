@@ -12,7 +12,7 @@
 		04760F0E24CED1F3009A8DA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04760F0D24CED1F3009A8DA9 /* ViewController.swift */; };
 		04760F1324CED1F8009A8DA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04760F1224CED1F8009A8DA9 /* Assets.xcassets */; };
 		04760F1624CED1F8009A8DA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04760F1424CED1F8009A8DA9 /* LaunchScreen.storyboard */; };
-		04760F1F24CED29B009A8DA9 /* FPHNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04760F1E24CED29B009A8DA9 /* FPHNavigationViewController.swift */; };
+		04760F1F24CED29B009A8DA9 /* FPHNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04760F1E24CED29B009A8DA9 /* FPHNavigationController.swift */; };
 		04760F2124CED54F009A8DA9 /* FPHNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04760F2024CED54F009A8DA9 /* FPHNavigationBar.swift */; };
 		04760F2324CED93C009A8DA9 /* FPHSwizzleMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04760F2224CED93C009A8DA9 /* FPHSwizzleMethod.swift */; };
 		04A054DB24D0398D006B05C3 /* TestNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A054DA24D0398D006B05C3 /* TestNavigationController.swift */; };
@@ -28,7 +28,7 @@
 		04760F1224CED1F8009A8DA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04760F1524CED1F8009A8DA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04760F1724CED1F8009A8DA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04760F1E24CED29B009A8DA9 /* FPHNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPHNavigationViewController.swift; sourceTree = "<group>"; };
+		04760F1E24CED29B009A8DA9 /* FPHNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPHNavigationController.swift; sourceTree = "<group>"; };
 		04760F2024CED54F009A8DA9 /* FPHNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPHNavigationBar.swift; sourceTree = "<group>"; };
 		04760F2224CED93C009A8DA9 /* FPHSwizzleMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPHSwizzleMethod.swift; sourceTree = "<group>"; };
 		04A054DA24D0398D006B05C3 /* TestNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNavigationController.swift; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 		04760F1D24CED23B009A8DA9 /* PFHNavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				04760F1E24CED29B009A8DA9 /* FPHNavigationViewController.swift */,
+				04760F1E24CED29B009A8DA9 /* FPHNavigationController.swift */,
 				04760F2024CED54F009A8DA9 /* FPHNavigationBar.swift */,
 				04760F2224CED93C009A8DA9 /* FPHSwizzleMethod.swift */,
 				04D2185324CFFA1100FD087D /* FPHNavigationItem.swift */,
@@ -167,7 +167,7 @@
 				04760F2324CED93C009A8DA9 /* FPHSwizzleMethod.swift in Sources */,
 				04A054DB24D0398D006B05C3 /* TestNavigationController.swift in Sources */,
 				04760F0E24CED1F3009A8DA9 /* ViewController.swift in Sources */,
-				04760F1F24CED29B009A8DA9 /* FPHNavigationViewController.swift in Sources */,
+				04760F1F24CED29B009A8DA9 /* FPHNavigationController.swift in Sources */,
 				04760F0A24CED1F3009A8DA9 /* AppDelegate.swift in Sources */,
 				046C9A9B24D15298003CD59C /* UINavigationConfig.swift in Sources */,
 			);

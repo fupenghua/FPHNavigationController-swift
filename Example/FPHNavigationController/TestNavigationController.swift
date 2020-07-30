@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TestNavigationController: FPHNavigationViewController {
+class TestNavigationController: FPHNavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

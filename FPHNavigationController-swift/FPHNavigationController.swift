@@ -1,5 +1,5 @@
 //
-//  FPHNavigationViewController.swift
+//  FPHNavigationController.swift
 //  FPHNavigationController
 //
 //  Created by 付朋华 on 2020/7/27.
@@ -10,7 +10,7 @@ import UIKit
 
 fileprivate var tempDisableFixSpace = false
 
-public class FPHNavigationViewController: UINavigationController, UIGestureRecognizerDelegate {
+public class FPHNavigationController: UINavigationController, UIGestureRecognizerDelegate {
 
     public override func viewDidLoad() {
         super.viewDidLoad()
