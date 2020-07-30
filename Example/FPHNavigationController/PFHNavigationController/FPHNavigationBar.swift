@@ -29,7 +29,7 @@ class FPHTopNavigationBar: UINavigationBar {
 }
 
 open class FPHNavigationBar: UINavigationBar {
-    open override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         resetUIBarBackground()
         fixSpace()

@@ -12,7 +12,7 @@ fileprivate var tempDisableFixSpace = false
 
 open class FPHNavigationController: UINavigationController, UIGestureRecognizerDelegate {
 
-    open override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         resetNavigationBar()
         _interactivePopGesture()
@@ -33,19 +33,19 @@ open class FPHNavigationController: UINavigationController, UIGestureRecognizerD
         }
     }
     
-    open override var preferredStatusBarStyle: UIStatusBarStyle {
+    override open var preferredStatusBarStyle: UIStatusBarStyle {
         return self.topViewController?.preferredStatusBarStyle ?? UIStatusBarStyle.default
     }
     
-    open override var prefersStatusBarHidden: Bool {
+    override open var prefersStatusBarHidden: Bool {
         return self.topViewController?.prefersStatusBarHidden ?? false
     }
     
-    open override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+    override open var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return self.topViewController!.supportedInterfaceOrientations
     }
     
-    open override func viewWillAppear(_ animated: Bool) {
+    override open func viewWillAppear(_ animated: Bool) {
         if self.isKind(of: UIImagePickerController.self) {
             tempDisableFixSpace = UINavigationConfig.shared.disableFixSpace
             UINavigationConfig.shared.disableFixSpace = true
@@ -53,20 +53,20 @@ open class FPHNavigationController: UINavigationController, UIGestureRecognizerD
         super.viewWillAppear(animated)
     }
     
-    open override func viewWillDisappear(_ animated: Bool) {
+    override open func viewWillDisappear(_ animated: Bool) {
         if self.isKind(of: UIImagePickerController.self) {
             UINavigationConfig.shared.disableFixSpace = tempDisableFixSpace
         }
         super.viewWillDisappear(animated)
     }
-    open override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+    override open func pushViewController(_ viewController: UIViewController, animated: Bool) {
         super.pushViewController(viewController, animated: animated)
         if !UINavigationConfig.shared.disableFixSpace && !animated {
             self.navigationBar.layoutSubviews()
         }
     }
     
-    open override func popViewController(animated: Bool) -> UIViewController? {
+    override open func popViewController(animated: Bool) -> UIViewController? {
         let vc = super.popViewController(animated: animated)
         if !UINavigationConfig.shared.disableFixSpace && !animated {
             self.navigationBar.layoutSubviews()
@@ -74,7 +74,7 @@ open class FPHNavigationController: UINavigationController, UIGestureRecognizerD
         return vc
     }
     
-    open override func popToViewController(_ viewController: UIViewController, animated: Bool) -> [UIViewController]? {
+    override open func popToViewController(_ viewController: UIViewController, animated: Bool) -> [UIViewController]? {
         let vcs = super.popToViewController(viewController, animated: animated)
         if !UINavigationConfig.shared.disableFixSpace && !animated {
             self.navigationBar.layoutSubviews()
@@ -82,7 +82,7 @@ open class FPHNavigationController: UINavigationController, UIGestureRecognizerD
         return vcs
     }
     
-    open override func popToRootViewController(animated: Bool) -> [UIViewController]? {
+    override open func popToRootViewController(animated: Bool) -> [UIViewController]? {
         let vcs = super.popToRootViewController(animated: animated)
         if !UINavigationConfig.shared.disableFixSpace && !animated {
             self.navigationBar.layoutSubviews()
@@ -90,7 +90,7 @@ open class FPHNavigationController: UINavigationController, UIGestureRecognizerD
         return vcs
     }
     
-    open override func setViewControllers(_ viewControllers: [UIViewController], animated: Bool) {
+    override open func setViewControllers(_ viewControllers: [UIViewController], animated: Bool) {
         super.setViewControllers(viewControllers, animated: animated)
         if !UINavigationConfig.shared.disableFixSpace && !animated {
             self.navigationBar.layoutSubviews()
