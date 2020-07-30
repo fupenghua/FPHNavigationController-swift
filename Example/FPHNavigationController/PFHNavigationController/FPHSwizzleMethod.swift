@@ -27,7 +27,7 @@ public protocol SelfAware: class {
 }
 
 public class ClassLoad {
-    static func harmlessFunction() {
+    public static func harmlessFunction() {
         let typeCount = Int(objc_getClassList(nil, 0))
         let types = UnsafeMutablePointer<AnyClass>.allocate(capacity: typeCount)
         let autoreleasingTypes = AutoreleasingUnsafeMutablePointer<AnyClass>(types)

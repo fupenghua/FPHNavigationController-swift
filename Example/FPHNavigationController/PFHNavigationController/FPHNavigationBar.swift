@@ -107,7 +107,7 @@ extension UIView: SelfAware {
         }
     }
     
-    open var viewLevel: UIViewLevel {
+    public var viewLevel: UIViewLevel {
         set {
             objc_setAssociatedObject(self, viewKey.viewLevelkey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
