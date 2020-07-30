@@ -28,7 +28,7 @@ class FPHTopNavigationBar: UINavigationBar {
 
 }
 
-public class FPHNavigationBar: UINavigationBar {
+open class FPHNavigationBar: UINavigationBar {
     public override func layoutSubviews() {
         super.layoutSubviews()
         resetUIBarBackground()

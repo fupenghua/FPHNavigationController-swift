@@ -10,7 +10,7 @@ import UIKit
 
 fileprivate var tempDisableFixSpace = false
 
-public class FPHNavigationController: UINavigationController, UIGestureRecognizerDelegate {
+open class FPHNavigationController: UINavigationController, UIGestureRecognizerDelegate {
 
     public override func viewDidLoad() {
         super.viewDidLoad()
