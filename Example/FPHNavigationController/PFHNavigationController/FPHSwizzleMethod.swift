@@ -22,11 +22,11 @@ func swizzlingInstanceMethod(forClass: AnyClass, originalSelector: Selector, swi
     }
 }
 
-protocol SelfAware: class {
+public protocol SelfAware: class {
     static func awake()
 }
 
-class ClassLoad {
+public class ClassLoad {
     static func harmlessFunction() {
         let typeCount = Int(objc_getClassList(nil, 0))
         let types = UnsafeMutablePointer<AnyClass>.allocate(capacity: typeCount)

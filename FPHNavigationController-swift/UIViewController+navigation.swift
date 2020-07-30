@@ -10,7 +10,7 @@ import UIKit
 
 extension UIViewController: SelfAware {
     
-    static func awake() {
+    public static func awake() {
         UIViewController.takeOnce
     }
     

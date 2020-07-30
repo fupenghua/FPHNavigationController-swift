@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class UINavigationConfig {
+public class UINavigationConfig {
     static let shared = UINavigationConfig()
     
     /// item距离两端的间距,默认为-10

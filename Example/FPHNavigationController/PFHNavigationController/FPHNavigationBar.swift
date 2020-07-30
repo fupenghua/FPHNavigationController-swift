@@ -18,7 +18,7 @@ fileprivate extension String {
     }
 }
 
-enum UIViewLevel {
+public enum UIViewLevel {
     case low
     case middle
     case high
@@ -83,7 +83,7 @@ extension UINavigationBar {
 }
         
 extension UIView: SelfAware {
-    static func awake() {
+    public static func awake() {
         UIView.takeOnce
     }
     
