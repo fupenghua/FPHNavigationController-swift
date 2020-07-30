@@ -28,8 +28,8 @@ class FPHTopNavigationBar: UINavigationBar {
 
 }
 
-public class FPHNavigationBar: UINavigationBar {
-    public override func layoutSubviews() {
+open class FPHNavigationBar: UINavigationBar {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         resetUIBarBackground()
         fixSpace()
@@ -107,7 +107,7 @@ extension UIView: SelfAware {
         }
     }
     
-    public var viewLevel: UIViewLevel {
+    open var viewLevel: UIViewLevel {
         set {
             objc_setAssociatedObject(self, viewKey.viewLevelkey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
