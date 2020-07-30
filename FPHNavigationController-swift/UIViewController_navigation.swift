@@ -1,5 +1,5 @@
 //
-//  UIViewController+navigation.swift
+//  UIViewController_navigation.swift
 //  FPHNavigationController
 //
 //  Created by 付朋华 on 2020/7/28.
@@ -31,21 +31,21 @@ extension UIViewController: SelfAware {
         }
     }
 
-    weak var navigationBar: FPHNavigationBar? {
-        set {
-            objc_setAssociatedObject(self, controllerKey.navigationBarKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-        }
-        get {
-            return objc_getAssociatedObject(self, controllerKey.navigationBarKey) as? FPHNavigationBar
-        }
-    }
-    
     fileprivate var f_navigation_item: FPHNavigationItem? {
         set {
             objc_setAssociatedObject(self, controllerKey.navigationItemKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
         get {
             return objc_getAssociatedObject(self, controllerKey.navigationItemKey) as? FPHNavigationItem
+        }
+    }
+    
+    public weak var navigationBar: FPHNavigationBar? {
+        set {
+            objc_setAssociatedObject(self, controllerKey.navigationBarKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+        get {
+            return objc_getAssociatedObject(self, controllerKey.navigationBarKey) as? FPHNavigationBar
         }
     }
     
@@ -76,7 +76,7 @@ extension UIViewController: SelfAware {
         if let item = self.f_navigation_item {
             item.title = title
         }
-
+        
     }
     
     @objc private func f_navigationItem() -> UINavigationItem {

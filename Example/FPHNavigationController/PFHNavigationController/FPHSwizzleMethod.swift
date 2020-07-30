@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-func swizzlingInstanceMethod(forClass: AnyClass, originalSelector: Selector, swizzledSelector: Selector) {
+public func swizzlingInstanceMethod(forClass: AnyClass, originalSelector: Selector, swizzledSelector: Selector) {
     let originalMethod = class_getInstanceMethod(forClass, originalSelector)
     let swizzledMethod = class_getInstanceMethod(forClass, swizzledSelector)
     guard (originalMethod != nil && swizzledMethod != nil) else {

@@ -17,7 +17,7 @@
 		04760F2324CED93C009A8DA9 /* FPHSwizzleMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04760F2224CED93C009A8DA9 /* FPHSwizzleMethod.swift */; };
 		04A054DB24D0398D006B05C3 /* TestNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A054DA24D0398D006B05C3 /* TestNavigationController.swift */; };
 		04D2185424CFFA1100FD087D /* FPHNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D2185324CFFA1100FD087D /* FPHNavigationItem.swift */; };
-		04D2185624D0003900FD087D /* UIViewController+navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D2185524D0003900FD087D /* UIViewController+navigation.swift */; };
+		04D2185624D0003900FD087D /* UIViewController_navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D2185524D0003900FD087D /* UIViewController_navigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		04760F2224CED93C009A8DA9 /* FPHSwizzleMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPHSwizzleMethod.swift; sourceTree = "<group>"; };
 		04A054DA24D0398D006B05C3 /* TestNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNavigationController.swift; sourceTree = "<group>"; };
 		04D2185324CFFA1100FD087D /* FPHNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPHNavigationItem.swift; sourceTree = "<group>"; };
-		04D2185524D0003900FD087D /* UIViewController+navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+navigation.swift"; sourceTree = "<group>"; };
+		04D2185524D0003900FD087D /* UIViewController_navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController_navigation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 				04760F2024CED54F009A8DA9 /* FPHNavigationBar.swift */,
 				04760F2224CED93C009A8DA9 /* FPHSwizzleMethod.swift */,
 				04D2185324CFFA1100FD087D /* FPHNavigationItem.swift */,
-				04D2185524D0003900FD087D /* UIViewController+navigation.swift */,
+				04D2185524D0003900FD087D /* UIViewController_navigation.swift */,
 				046C9A9A24D15298003CD59C /* UINavigationConfig.swift */,
 			);
 			path = PFHNavigationController;
@@ -161,7 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04D2185624D0003900FD087D /* UIViewController+navigation.swift in Sources */,
+				04D2185624D0003900FD087D /* UIViewController_navigation.swift in Sources */,
 				04760F2124CED54F009A8DA9 /* FPHNavigationBar.swift in Sources */,
 				04D2185424CFFA1100FD087D /* FPHNavigationItem.swift in Sources */,
 				04760F2324CED93C009A8DA9 /* FPHSwizzleMethod.swift in Sources */,

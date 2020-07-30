@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FPHNavigationController-swift'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'swift版本自定义导航'
 
 # This description is used to generate tags and improve search results.
@@ -30,6 +30,6 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
   s.swift_versions = '5.0'
-  s.source_files = 'FPHNavigationController-swift/*.swift'
+  s.source_files = 'FPHNavigationController-swift/*'
 
 end
