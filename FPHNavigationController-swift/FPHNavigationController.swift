@@ -20,7 +20,7 @@ open class FPHNavigationController: UINavigationController, UIGestureRecognizerD
     }
     
     private func resetNavigationBar() {
-        self.setNavigationBarHidden(true, animated: false)
+        self.navigationBar.isHidden = true
         let bar: FPHTopNavigationBar = FPHTopNavigationBar()
         bar.isHidden = false;
         self.setValue(bar, forKey: "_navigationBar")
