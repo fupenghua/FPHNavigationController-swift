@@ -60,12 +60,30 @@ open class FPHNavigationBar: UINavigationBar {
                         frame.origin.x = space
                         frame.size.width = frame.size.width - space
                         subview.frame = frame
+                        for sv in subview.subviews {
+                            if sv is UILabel {
+                                if let cons = titleLabelCenterX(subview) {
+                                    cons.constant = -space / 2
+                                }
+                                break
+                            }
+                        }
                     } else {
                         subview.layoutMargins = UIEdgeInsets(top: 0, left: space, bottom: 0, right: subview.layoutMargins.right)
                     }
                 }
             }
         }
+    }
+    private func titleLabelCenterX(_ superView: UIView) -> NSLayoutConstraint? {
+        var co: NSLayoutConstraint?
+        for constraint in superView.constraints {
+            if constraint.firstItem is UILabel && constraint.firstAttribute == .centerX {
+                co = constraint
+                break
+            }
+        }
+        return co
     }
 }
 
