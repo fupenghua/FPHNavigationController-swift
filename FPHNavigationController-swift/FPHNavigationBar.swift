@@ -103,7 +103,6 @@ extension UINavigationBar {
         
 extension UIView: SelfAware {
     public static func awake() {
-        print("UIView awake")
         UIView.takeOnce
     }
     

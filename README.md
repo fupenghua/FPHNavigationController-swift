@@ -36,7 +36,7 @@ swift版本自定义导航+fix left item space，隐藏系统navigationBar，然
 在AppDelegate中添加
 ```
 private static let runOnce: Void = {
-      ClassLoad.harmlessFunction()
+      ClassLoad.swizzeFunction()
   }()
   
   override open var next: UIResponder? {
