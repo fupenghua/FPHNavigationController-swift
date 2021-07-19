@@ -7,33 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		046C9A9B24D15298003CD59C /* UINavigationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C9A9A24D15298003CD59C /* UINavigationConfig.swift */; };
 		04760F0A24CED1F3009A8DA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04760F0924CED1F3009A8DA9 /* AppDelegate.swift */; };
 		04760F0E24CED1F3009A8DA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04760F0D24CED1F3009A8DA9 /* ViewController.swift */; };
 		04760F1324CED1F8009A8DA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04760F1224CED1F8009A8DA9 /* Assets.xcassets */; };
 		04760F1624CED1F8009A8DA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04760F1424CED1F8009A8DA9 /* LaunchScreen.storyboard */; };
-		04760F1F24CED29B009A8DA9 /* FPHNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04760F1E24CED29B009A8DA9 /* FPHNavigationController.swift */; };
-		04760F2124CED54F009A8DA9 /* FPHNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04760F2024CED54F009A8DA9 /* FPHNavigationBar.swift */; };
-		04760F2324CED93C009A8DA9 /* FPHSwizzleMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04760F2224CED93C009A8DA9 /* FPHSwizzleMethod.swift */; };
 		04A054DB24D0398D006B05C3 /* TestNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A054DA24D0398D006B05C3 /* TestNavigationController.swift */; };
-		04D2185424CFFA1100FD087D /* FPHNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D2185324CFFA1100FD087D /* FPHNavigationItem.swift */; };
-		04D2185624D0003900FD087D /* UIViewController_navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D2185524D0003900FD087D /* UIViewController_navigation.swift */; };
+		DC24611526A527B90089CD2D /* UIViewController_navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24610F26A527B90089CD2D /* UIViewController_navigation.swift */; };
+		DC24611626A527B90089CD2D /* UINavigationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24611026A527B90089CD2D /* UINavigationConfig.swift */; };
+		DC24611726A527B90089CD2D /* FPHNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24611126A527B90089CD2D /* FPHNavigationItem.swift */; };
+		DC24611826A527B90089CD2D /* FPHNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24611226A527B90089CD2D /* FPHNavigationController.swift */; };
+		DC24611926A527B90089CD2D /* FPHNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24611326A527B90089CD2D /* FPHNavigationBar.swift */; };
+		DC24611A26A527B90089CD2D /* FPHSwizzleMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24611426A527B90089CD2D /* FPHSwizzleMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		046C9A9A24D15298003CD59C /* UINavigationConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationConfig.swift; sourceTree = "<group>"; };
 		04760F0624CED1F3009A8DA9 /* FPHNavigationController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FPHNavigationController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04760F0924CED1F3009A8DA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04760F0D24CED1F3009A8DA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04760F1224CED1F8009A8DA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04760F1524CED1F8009A8DA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04760F1724CED1F8009A8DA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04760F1E24CED29B009A8DA9 /* FPHNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPHNavigationController.swift; sourceTree = "<group>"; };
-		04760F2024CED54F009A8DA9 /* FPHNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPHNavigationBar.swift; sourceTree = "<group>"; };
-		04760F2224CED93C009A8DA9 /* FPHSwizzleMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPHSwizzleMethod.swift; sourceTree = "<group>"; };
 		04A054DA24D0398D006B05C3 /* TestNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNavigationController.swift; sourceTree = "<group>"; };
-		04D2185324CFFA1100FD087D /* FPHNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPHNavigationItem.swift; sourceTree = "<group>"; };
-		04D2185524D0003900FD087D /* UIViewController_navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController_navigation.swift; sourceTree = "<group>"; };
+		DC24610F26A527B90089CD2D /* UIViewController_navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController_navigation.swift; sourceTree = "<group>"; };
+		DC24611026A527B90089CD2D /* UINavigationConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationConfig.swift; sourceTree = "<group>"; };
+		DC24611126A527B90089CD2D /* FPHNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPHNavigationItem.swift; sourceTree = "<group>"; };
+		DC24611226A527B90089CD2D /* FPHNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPHNavigationController.swift; sourceTree = "<group>"; };
+		DC24611326A527B90089CD2D /* FPHNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPHNavigationBar.swift; sourceTree = "<group>"; };
+		DC24611426A527B90089CD2D /* FPHSwizzleMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPHSwizzleMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 		04760F0824CED1F3009A8DA9 /* FPHNavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				04760F1D24CED23B009A8DA9 /* PFHNavigationController */,
+				DC24610E26A527B90089CD2D /* FPHNavigationController-swift */,
 				04760F0924CED1F3009A8DA9 /* AppDelegate.swift */,
 				04760F0D24CED1F3009A8DA9 /* ViewController.swift */,
 				04A054DA24D0398D006B05C3 /* TestNavigationController.swift */,
@@ -77,17 +77,18 @@
 			path = FPHNavigationController;
 			sourceTree = "<group>";
 		};
-		04760F1D24CED23B009A8DA9 /* PFHNavigationController */ = {
+		DC24610E26A527B90089CD2D /* FPHNavigationController-swift */ = {
 			isa = PBXGroup;
 			children = (
-				04760F1E24CED29B009A8DA9 /* FPHNavigationController.swift */,
-				04760F2024CED54F009A8DA9 /* FPHNavigationBar.swift */,
-				04760F2224CED93C009A8DA9 /* FPHSwizzleMethod.swift */,
-				04D2185324CFFA1100FD087D /* FPHNavigationItem.swift */,
-				04D2185524D0003900FD087D /* UIViewController_navigation.swift */,
-				046C9A9A24D15298003CD59C /* UINavigationConfig.swift */,
+				DC24610F26A527B90089CD2D /* UIViewController_navigation.swift */,
+				DC24611026A527B90089CD2D /* UINavigationConfig.swift */,
+				DC24611126A527B90089CD2D /* FPHNavigationItem.swift */,
+				DC24611226A527B90089CD2D /* FPHNavigationController.swift */,
+				DC24611326A527B90089CD2D /* FPHNavigationBar.swift */,
+				DC24611426A527B90089CD2D /* FPHSwizzleMethod.swift */,
 			);
-			path = PFHNavigationController;
+			name = "FPHNavigationController-swift";
+			path = "../../FPHNavigationController-swift";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,15 +162,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04D2185624D0003900FD087D /* UIViewController_navigation.swift in Sources */,
-				04760F2124CED54F009A8DA9 /* FPHNavigationBar.swift in Sources */,
-				04D2185424CFFA1100FD087D /* FPHNavigationItem.swift in Sources */,
-				04760F2324CED93C009A8DA9 /* FPHSwizzleMethod.swift in Sources */,
+				DC24611A26A527B90089CD2D /* FPHSwizzleMethod.swift in Sources */,
+				DC24611526A527B90089CD2D /* UIViewController_navigation.swift in Sources */,
 				04A054DB24D0398D006B05C3 /* TestNavigationController.swift in Sources */,
 				04760F0E24CED1F3009A8DA9 /* ViewController.swift in Sources */,
-				04760F1F24CED29B009A8DA9 /* FPHNavigationController.swift in Sources */,
+				DC24611826A527B90089CD2D /* FPHNavigationController.swift in Sources */,
+				DC24611926A527B90089CD2D /* FPHNavigationBar.swift in Sources */,
 				04760F0A24CED1F3009A8DA9 /* AppDelegate.swift in Sources */,
-				046C9A9B24D15298003CD59C /* UINavigationConfig.swift in Sources */,
+				DC24611626A527B90089CD2D /* UINavigationConfig.swift in Sources */,
+				DC24611726A527B90089CD2D /* FPHNavigationItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

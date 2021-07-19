@@ -11,6 +11,7 @@ import UIKit
 extension UIViewController: SelfAware {
     
     public static func awake() {
+        print("UIViewController awake")
         UIViewController.takeOnce
     }
     

@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         
     }
     @objc func back() {
-        self.navigationController?.popViewController(animated: false)
+        self.navigationController?.popViewController(animated: true)
     }
     func addButton() {
         let btn = UIButton(type: .custom)
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     
     @objc func click() {
         let vc = ViewController()
-        self.navigationController?.pushViewController(vc, animated: false)
+        self.navigationController?.pushViewController(vc, animated: true)
         
     }
 

@@ -22,20 +22,18 @@ public func swizzlingInstanceMethod(forClass: AnyClass, originalSelector: Select
     }
 }
 
-public protocol SelfAware: class {
+public protocol SelfAware: NSObjectProtocol {
     static func awake()
 }
 
 public class ClassLoad {
-    public static func harmlessFunction() {
-        let typeCount = Int(objc_getClassList(nil, 0))
-        let types = UnsafeMutablePointer<AnyClass>.allocate(capacity: typeCount)
-        let autoreleasingTypes = AutoreleasingUnsafeMutablePointer<AnyClass>(types)
-        objc_getClassList(autoreleasingTypes, Int32(typeCount))
-        for index in 0 ..< typeCount {
-            (types[index] as? SelfAware.Type)?.awake()
+    public static func swizzeFunction() {
+        let swizzedClasses: [Any] = [UIViewController.self, UIView.self]
+        for sCls in swizzedClasses {
+            if let type = sCls as? SelfAware.Type {
+                type.awake()
+            }
         }
-        types.deallocate()
     }
 }
 

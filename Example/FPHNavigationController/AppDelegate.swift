@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private static let runOnce: Void = {
-        ClassLoad.harmlessFunction()
+        ClassLoad.swizzeFunction()
     }()
     
     override open var next: UIResponder? {
