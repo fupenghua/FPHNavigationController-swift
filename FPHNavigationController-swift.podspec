@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FPHNavigationController-swift'
-  s.version          = '1.1.2'
+  s.version          = '1.1.3'
   s.summary          = 'swift版本自定义导航'
 
 # This description is used to generate tags and improve search results.

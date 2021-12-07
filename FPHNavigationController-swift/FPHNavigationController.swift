@@ -97,7 +97,7 @@ open class FPHNavigationController: UINavigationController, UIGestureRecognizerD
             self.navigationBar.layoutSubviews()
         }
     }
-    public func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+    open func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
         self.interactivePopGestureRecognizer?.isEnabled = viewControllers.count != 1
 
     }
