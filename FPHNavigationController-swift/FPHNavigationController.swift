@@ -10,7 +10,7 @@ import UIKit
 
 fileprivate var tempDisableFixSpace = false
 
-open class FPHNavigationController: UINavigationController, UIGestureRecognizerDelegate {
+open class FPHNavigationController: UINavigationController, UIGestureRecognizerDelegate, UINavigationControllerDelegate {
 
     override open func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +30,7 @@ open class FPHNavigationController: UINavigationController, UIGestureRecognizerD
     private func _interactivePopGesture() {
         if self.responds(to: #selector(getter: interactivePopGestureRecognizer)) {
             self.interactivePopGestureRecognizer?.delegate = self
+            self.delegate = self
         }
     }
     
@@ -96,4 +97,9 @@ open class FPHNavigationController: UINavigationController, UIGestureRecognizerD
             self.navigationBar.layoutSubviews()
         }
     }
+    public func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+        self.interactivePopGestureRecognizer?.isEnabled = viewControllers.count != 1
+
+    }
+    
 }

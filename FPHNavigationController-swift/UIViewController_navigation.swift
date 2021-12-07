@@ -50,24 +50,39 @@ extension UIViewController: SelfAware {
     }
     
     public func reloadNavigationBar() {
-        self.removeNavigationBar()
-        let size = UIApplication.shared.statusBarFrame.size
-        let navigationBar = FPHNavigationBar()
-        self.edgesForExtendedLayout = .top
-        navigationBar.frame = CGRect(x: 0, y: size.height, width: size.width, height: 44)
-        self.view.isViewControllerBaseView = true
-        self.navigationBar = navigationBar
-        self.view.addSubview(navigationBar)
-        let item = FPHNavigationItem()
-        self.f_navigation_item = item
-        navigationBar.items = [item]
+        if let window = self.keywindow, self.navigationBar == nil {
+            let insets = window.safeAreaInsets
+            let size = CGSize(width: window.bounds.size.width, height: insets.top)
+            let navigationBar = FPHNavigationBar()
+            self.edgesForExtendedLayout = .top
+            navigationBar.frame = CGRect(x: 0, y: size.height, width: size.width, height: 44)
+            self.view.isViewControllerBaseView = true
+            self.navigationBar = navigationBar
+            self.view.addSubview(navigationBar)
+            let item = FPHNavigationItem()
+            self.f_navigation_item = item
+            navigationBar.items = [item]
+        }
     }
     
-    public func removeNavigationBar() {
-        if let bar = self.navigationBar {
-            bar.removeFromSuperview()
-            self.navigationBar = nil
-            self.f_navigation_item = nil
+    public func setNavigationBar(hidden: Bool, animation: Bool = false) {
+        if let bar = self.navigationBar, let window = self.keywindow {
+            let insets = window.safeAreaInsets
+            let y = hidden ? -bar.bounds.size.height : insets.top
+            var origin = bar.frame.origin
+            origin.y = y
+            if animation {
+                if !hidden { bar.isHidden = hidden }
+                UIView.animate(withDuration: 0.16, delay: 0, options: .curveLinear) {
+                    bar.frame = CGRect(origin: origin, size: bar.frame.size)
+                } completion: { finish in
+                    if hidden { bar.isHidden = hidden }
+                }
+
+            } else {
+                bar.frame = CGRect(origin: origin, size: bar.frame.size)
+                bar.isHidden = hidden
+            }
         }
     }
     
@@ -86,7 +101,23 @@ extension UIViewController: SelfAware {
         return f_navigationItem()
     }
     
-    
+    private var keywindow: UIWindow? {
+        var originalKeyWindow : UIWindow? = nil
+        
+        #if swift(>=5.1)
+        if #available(iOS 13, *) {
+            originalKeyWindow = UIApplication.shared.connectedScenes
+                .compactMap { $0 as? UIWindowScene }
+                .flatMap { $0.windows }
+                .first(where: { $0.isKeyWindow })
+        } else {
+            originalKeyWindow = UIApplication.shared.keyWindow
+        }
+        #else
+        originalKeyWindow = UIApplication.shared.keyWindow
+        #endif
+        return originalKeyWindow
+    }
 }
 
 fileprivate struct controllerKey {
