@@ -26,6 +26,8 @@ public protocol SelfAware: NSObjectProtocol {
     static func awake()
 }
 
+
+
 public class ClassLoad {
     public static func swizzeFunction() {
         let swizzedClasses: [Any] = [UIViewController.self, UIView.self]

@@ -8,9 +8,15 @@
 
 import UIKit
 
-@UIApplicationMain
+@main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
+    
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        runOnce()
+        return true
+    }
+
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let rootViewController = FPHNavigationController(rootViewController: ViewController())
@@ -25,13 +31,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    private static let runOnce: Void = {
+    private func runOnce() {
         ClassLoad.swizzeFunction()
-    }()
-    
-    override open var next: UIResponder? {
-        AppDelegate.runOnce
-        return super.next
     }
+    
 
 }

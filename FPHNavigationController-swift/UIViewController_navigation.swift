@@ -73,7 +73,7 @@ extension UIViewController: SelfAware {
             origin.y = y
             if animation {
                 if !hidden { bar.isHidden = hidden }
-                UIView.animate(withDuration: 0.16, delay: 0, options: .curveLinear) {
+                UIView.animate(withDuration: 0.16, delay: 0, options: .curveEaseOut) {
                     bar.frame = CGRect(origin: origin, size: bar.frame.size)
                 } completion: { finish in
                     if hidden { bar.isHidden = hidden }

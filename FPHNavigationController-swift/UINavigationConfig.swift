@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-public class UINavigationConfig {
-    static let shared = UINavigationConfig()
-    
+public var ConfigShared = UINavigationConfig()
+
+public struct UINavigationConfig {
     /// item距离两端的间距,默认为-10
     var defaultFixSpace: CGFloat = -10
     

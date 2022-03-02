@@ -14,7 +14,7 @@ class FPHNavigationItem: UINavigationItem {
             if #available(iOS 11.0, *) {
                 super.leftBarButtonItem = newValue
             } else {
-                if !UINavigationConfig.shared.disableFixSpace && newValue != nil {
+                if !ConfigShared.disableFixSpace && newValue != nil {
                     self.leftBarButtonItems = [newValue!]
                 } else {
                     super.leftBarButtonItem = newValue
@@ -31,13 +31,13 @@ class FPHNavigationItem: UINavigationItem {
             if #available(iOS 11.0, *) {
                 super.leftBarButtonItems = newValue
             } else {
-                if let items = newValue, items.count > 0 && !UINavigationConfig.shared.disableFixSpace {
+                if let items = newValue, items.count > 0 && !ConfigShared.disableFixSpace {
                     let firstItem = items.first!
                     //第一个为space
                     if firstItem.image == nil && firstItem.title == nil && firstItem.customView == nil {
                         super.leftBarButtonItems = items
                     } else {
-                        let fixSpace = fixedSpaceWithWidth(UINavigationConfig.shared.fixedSpaceWidth)
+                        let fixSpace = fixedSpaceWithWidth(ConfigShared.fixedSpaceWidth)
                         var newItems = items
                         newItems.insert(fixSpace, at: 0)
                         super.leftBarButtonItems = newItems
@@ -56,7 +56,7 @@ class FPHNavigationItem: UINavigationItem {
         if #available(iOS 11.0, *) {
             super.setLeftBarButton(item, animated: animated)
         } else {
-            if !UINavigationConfig.shared.disableFixSpace && item != nil {
+            if !ConfigShared.disableFixSpace && item != nil {
                 self.setLeftBarButtonItems([item!], animated: animated)
             } else {
                 super.setLeftBarButton(item, animated: animated)
@@ -68,13 +68,13 @@ class FPHNavigationItem: UINavigationItem {
         if #available(iOS 11.0, *) {
             super.setLeftBarButtonItems(items, animated: animated)
         } else {
-            if let items = items, items.count > 0 && !UINavigationConfig.shared.disableFixSpace {
+            if let items = items, items.count > 0 && !ConfigShared.disableFixSpace {
                 let firstItem = items.first!
                 //第一个为space
                 if firstItem.image == nil && firstItem.title == nil && firstItem.customView == nil {
                     super.setLeftBarButtonItems(items, animated: animated)
                 } else {
-                    let fixSpace = fixedSpaceWithWidth(UINavigationConfig.shared.fixedSpaceWidth)
+                    let fixSpace = fixedSpaceWithWidth(ConfigShared.fixedSpaceWidth)
                     var newItems = items
                     newItems.insert(fixSpace, at: 0)
                     super.setLeftBarButtonItems(newItems, animated: animated)

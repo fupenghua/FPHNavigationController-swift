@@ -18,6 +18,9 @@
 		DC24611826A527B90089CD2D /* FPHNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24611226A527B90089CD2D /* FPHNavigationController.swift */; };
 		DC24611926A527B90089CD2D /* FPHNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24611326A527B90089CD2D /* FPHNavigationBar.swift */; };
 		DC24611A26A527B90089CD2D /* FPHSwizzleMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24611426A527B90089CD2D /* FPHSwizzleMethod.swift */; };
+		DCAA5A9D278FFE0B002FCEFF /* UIViewCustomProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA5A9C278FFE0B002FCEFF /* UIViewCustomProperty.swift */; };
+		DCAA5A9F27900B1D002FCEFF /* FPHFixSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA5A9E27900B1D002FCEFF /* FPHFixSpace.swift */; };
+		DCAA5AA427901DDC002FCEFF /* FUIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA5AA327901DDC002FCEFF /* FUIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		DC24611226A527B90089CD2D /* FPHNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPHNavigationController.swift; sourceTree = "<group>"; };
 		DC24611326A527B90089CD2D /* FPHNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPHNavigationBar.swift; sourceTree = "<group>"; };
 		DC24611426A527B90089CD2D /* FPHSwizzleMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPHSwizzleMethod.swift; sourceTree = "<group>"; };
+		DCAA5A9C278FFE0B002FCEFF /* UIViewCustomProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewCustomProperty.swift; sourceTree = "<group>"; };
+		DCAA5A9E27900B1D002FCEFF /* FPHFixSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPHFixSpace.swift; sourceTree = "<group>"; };
+		DCAA5AA327901DDC002FCEFF /* FUIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,9 @@
 				DC24611226A527B90089CD2D /* FPHNavigationController.swift */,
 				DC24611326A527B90089CD2D /* FPHNavigationBar.swift */,
 				DC24611426A527B90089CD2D /* FPHSwizzleMethod.swift */,
+				DCAA5A9E27900B1D002FCEFF /* FPHFixSpace.swift */,
+				DCAA5A9C278FFE0B002FCEFF /* UIViewCustomProperty.swift */,
+				DCAA5AA327901DDC002FCEFF /* FUIViewExtension.swift */,
 			);
 			name = "FPHNavigationController-swift";
 			path = "../../FPHNavigationController-swift";
@@ -163,9 +172,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC24611A26A527B90089CD2D /* FPHSwizzleMethod.swift in Sources */,
+				DCAA5A9F27900B1D002FCEFF /* FPHFixSpace.swift in Sources */,
 				DC24611526A527B90089CD2D /* UIViewController_navigation.swift in Sources */,
+				DCAA5A9D278FFE0B002FCEFF /* UIViewCustomProperty.swift in Sources */,
 				04A054DB24D0398D006B05C3 /* TestNavigationController.swift in Sources */,
 				04760F0E24CED1F3009A8DA9 /* ViewController.swift in Sources */,
+				DCAA5AA427901DDC002FCEFF /* FUIViewExtension.swift in Sources */,
 				DC24611826A527B90089CD2D /* FPHNavigationController.swift in Sources */,
 				DC24611926A527B90089CD2D /* FPHNavigationBar.swift in Sources */,
 				04760F0A24CED1F3009A8DA9 /* AppDelegate.swift in Sources */,
