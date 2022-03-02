@@ -38,6 +38,7 @@ extension UIView: SelfAware {
         if self.isViewControllerBaseView {
             guard subview.viewLevel != .high else { return }
             if let vc: UIViewController = self.next as? UIViewController, let navigationBar = vc.navigationBar {
+                guard subview != navigationBar else { return }
                 if let firstHighView = firstHighLevelView(navigationBar) {
                     insertSubview(navigationBar, belowSubview: firstHighView)
                 } else {
